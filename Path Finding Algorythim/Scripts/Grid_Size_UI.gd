@@ -4,7 +4,7 @@ var GridSize_Range = range(1,99)
 
 var NT = 1
 
-onready var GridGenerator_Script = load("res://Scripts/Grid_Size_UI.gd")
+onready var GridGenerator_Script = load("res://Scripts/Grid Generator.gd").new()
 
 func _on_LineEdit_text_entered(new_text):
 	if new_text.is_valid_integer():

@@ -7,7 +7,7 @@ var GridSize_Range = range(1,99)
 
 var test = 19
 
-var NT = 2
+var NT = 4
 
 onready var GridGenerator_Script = load("res://Scripts/Grid Generator.gd").new()
 

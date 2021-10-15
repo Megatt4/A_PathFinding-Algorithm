@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Test Label (Check if Var Works).gd" type="Script" id=1]
+
+[node name="Test UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Test Label (Check if Var Works)" type="Label" parent="."]
+margin_left = 41.2725
+margin_top = 26.9858
+margin_right = 81.2725
+margin_bottom = 40.9858
+script = ExtResource( 1 )

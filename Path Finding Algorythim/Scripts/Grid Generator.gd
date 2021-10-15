@@ -1,8 +1,5 @@
 extends Node2D
 
-func _process(delta):
-	update()
-
 var GridSizeUI_Script = load("res://Scripts/Grid_Size_UI.gd").new()
 
 var ValidGridSize = false
@@ -45,4 +42,7 @@ func JustDraw(intialposX, intialposY, LineColor, SpacingX, SpacingY):
 
 func _draw():
 	JustDraw(Vector2(0, 0), Vector2(0, 0), Color(1.0, 0.0, 0.0), Vector2(0, 30), Vector2(30, 0))
+	
+func _process(delta):
+	update()
 

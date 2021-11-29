@@ -1,6 +1,6 @@
 extends Node2D
 
-var GridSizeUI_Script = load("res://Scripts/Grid_Size_UI.gd").new()
+##onready var nt = get_node("/root/Main Scene/Grid Size - UI/LineEdit").NT
 
 var ValidGridSize = false
 
@@ -11,7 +11,11 @@ var SizeX = Vector2(100,100)
 var SizeY = Vector2(100,100)
 
 #Size of grid in a 1x1 basis ( User Input )
-var GridSize = GridSizeUI_Script.NT
+onready var GridSize = get_node("/root/Main Scene/Grid Size - UI/LineEdit").NT
+
+func _process(delta):
+	GridSize = get_node("/root/Main Scene/Grid Size - UI/LineEdit").NT
+	update()
 
 func JustDraw(intialposX, intialposY, LineColor, SpacingX, SpacingY):
 	var OGposY = intialposY
@@ -43,6 +47,5 @@ func JustDraw(intialposX, intialposY, LineColor, SpacingX, SpacingY):
 func _draw():
 	JustDraw(Vector2(0, 0), Vector2(0, 0), Color(1.0, 0.0, 0.0), Vector2(0, 30), Vector2(30, 0))
 	
-func _process(delta):
-	update()
+	
 

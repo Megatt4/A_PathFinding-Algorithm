@@ -4,8 +4,6 @@ extends Node2D
 
 var ValidGridSize = false
 
-var NumForPerfectGrid = 20
-
 #Size Of the grid (adjustable depending on GridSize var)
 var SizeX = Vector2(100,100)
 var SizeY = Vector2(100,100)
@@ -47,5 +45,5 @@ func JustDraw(intialposX, intialposY, LineColor, SpacingX, SpacingY):
 func _draw():
 	JustDraw(Vector2(0, 0), Vector2(0, 0), Color(1.0, 0.0, 0.0), Vector2(0, 30), Vector2(30, 0))
 	
-	
+	# Squares are 30x30
 

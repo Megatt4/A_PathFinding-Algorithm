@@ -3,7 +3,7 @@ extends LineEdit
 func _process(delta):
 	update()
 
-var GridSize_Range = range(1,99)
+var GridSize_Range = range(2,21)
 
 var test = 19
 
@@ -41,4 +41,6 @@ func _on_LineEdit_text_entered(new_text):
 #	else:
 #		GridGenerator_Script.ValidGridSize = false
 #		self.clear()
+
+#run a process in here that says that every time something is inputted, grid pos is incremented
 

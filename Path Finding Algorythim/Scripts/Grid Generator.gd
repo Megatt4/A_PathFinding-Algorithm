@@ -4,6 +4,7 @@ extends Node2D
 
 var ValidGridSize = false
 
+var GridPosition = Vector2(215,285)
 #Size Of the grid (adjustable depending on GridSize var)
 var SizeX = Vector2(100,100)
 var SizeY = Vector2(100,100)
@@ -14,14 +15,13 @@ onready var GridSize = get_node("/root/Main Scene/Grid Size - UI/LineEdit").NT
 func _process(delta):
 	GridSize = get_node("/root/Main Scene/Grid Size - UI/LineEdit").NT
 	update()
+	self.position = Vector2(GridPosition) - (GridSize - 1) * Vector2(0,15)
 
 func JustDraw(intialposX, intialposY, LineColor, SpacingX, SpacingY):
 	var OGposY = intialposY
 	var OGposX = intialposX
 	var intialposEndX = Vector2(100, 100)
 	var intialposEndY = Vector2(100, 100)
-	SizeX = Vector2(intialposEndY)
-	SizeY = Vector2(intialposEndX)
 
 	for i in range(GridSize):
 		intialposX = intialposX + Vector2(SpacingX)

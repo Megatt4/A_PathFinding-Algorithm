@@ -1,21 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenes/Grid Generator.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Grid Size - UI.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Test UI.tscn" type="PackedScene" id=3]
 
 [node name="Main Scene" type="Node"]
 
 [node name="Grid Generator" parent="." instance=ExtResource( 1 )]
+position = Vector2( 215, 285 )
 
 [node name="Grid Size - UI" parent="." instance=ExtResource( 2 )]
-margin_left = 421.809
-margin_top = 469.863
-margin_right = 421.809
-margin_bottom = 469.863
-
-[node name="Test UI" parent="." instance=ExtResource( 3 )]
-margin_left = 335.28
-margin_top = 272.385
-margin_right = -379.72
-margin_bottom = -216.615
+margin_left = 36.182
+margin_top = 300.0
+margin_right = -61.818
+margin_bottom = 233.0
